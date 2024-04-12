@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lng="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Sessões</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+
+<body>
+    <header class="header">
+        <a href="#">CineXperience</a>
+        <nav>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Qual filme você esta procurando?">
+                <button class="search-button">Buscar</button>
+              </div>
+         
+        </nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>  
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        
+      </header>
+       
+    <h1>Sinopse</h1>
+   <p>Monstros S.A. é a maior fábrica de sustos existente. Localizada em uma dimensão paralela, a fábrica constrói portais que levam os monstros para os quartos das crianças, onde eles poderão lhes dar sustos e gerar a fonte de energia necessária para a sobrevivência da fábrica. Entre todos os monstros que lá trabalham o mais assustador de todos é James P. Sullivan (John Goodman), um grande e intimidador monstro de pêlo azul e chifres, que é chamado de Sully por seus amigos. Seu assistente é Mike Wazowski (Billy Crystal), um pequeno ser de um olho só com quem tem por missão assustar as crianças, que são consideradas tóxicas pelos monstros e cujo contato com eles seria catastrófico para seu mundo. Porém, ao visitar o mundo dos humanos a trabalho, Mike e Sully conhecem a garota Boo (Mary Gibbs), que acaba sem querer indo parar no mundo dos monstros.</p>
+    <h1>Sessões Disponiveis</h1>
+    
+    <form class="sessao">
+        <label for="data">Escolha um dia:</label>
+        <input type="date" id="data" name="data">
+        <input type="submit" value="Agendar">
+      </form>
+      <form class="sessao">
+        <label for="horarios">Escolha um horário disponível:</label>
+        <select id="horarios" name="horarios">
+            <option value="-">-</option>  
+          <option value="18:00">18:00</option>
+          <option value="19:30">19:30</option>
+          <option value="21:00">21:00</option>
+          <option value="22:00">22:00</option>
+          <option value="23:00">23:00</option>
+          </select>
+        <input type="submit" value="Agendar">
+      </form>
+      <form class="sessao">
+        <label for="tipo-ingresso">Selecione o tipo de ingresso:</label><br>
+        <input type="radio" id="inteira" name="tipo-ingresso" value="inteira">
+        <label for="inteira">Inteira: R$32,00</label><br>
+        <input type="radio" id="meia" name="tipo-ingresso" value="meia">
+        <label for="meia">Meia-entrada: R$16,00</label><br>
+        <input type="submit" value="Comprar">
+      </form>
+</body>

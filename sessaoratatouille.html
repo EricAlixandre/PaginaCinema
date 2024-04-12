@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lng="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Sessões</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+
+<body>
+    <header class="header">
+        <a href="#">CineXperience</a>
+        <nav>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Qual filme você esta procurando?">
+                <button class="search-button">Buscar</button>
+              </div>
+         
+        </nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>  
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        
+      </header>
+       
+    <h1>Sinopse</h1>
+   <p>Em Ratatouille, Remy (Patton Oswalt) é apenas um rato de esgoto que sonha em ser mais do que seu pai quer que ele seja. Um dia, inspirado por um programa culinário de um famoso chef francês, Gusteau (Brad Garrett), Remy parte em busco de usar suas novas técnicas culinárias para fazer com que sua família coma comida boa - segundo seu paladar. Porém, em um fatídico dia tentando fazer uma receita mirabolante com seu irmão, ele acaba fazendo com que sua família tenha que se mudar, acabando se separando dela nas redes de esgoto. Por sua sorte, a tubulação o leva a Paris, a cidade da gastronomia - e bem em frente ao restaurante do chef. Entrando no local para realizar um sonho, ele acaba conhecendo Linguine (Lou Romano), filho bastardo do renomado chef que acabou de ser contratado para limpar a cozinha. Em uma ideia mirabolante dos dois, Remy passa a ser o real "cozinheiro" que comanda Linguine embaixo de seu chapéu de chef, usando suas receitas e habilidades culinárias para que o menino reivindique o restaurante como herdeiro.</p>
+    <h1>Sessões Disponiveis</h1>
+    
+    <form class="sessao">
+        <label for="data">Escolha um dia:</label>
+        <input type="date" id="data" name="data">
+        <input type="submit" value="Agendar">
+      </form>
+      <form class="sessao">
+        <label for="horarios">Escolha um horário disponível:</label>
+        <select id="horarios" name="horarios">
+            <option value="-">-</option>  
+          <option value="18:00">18:00</option>
+          <option value="19:30">19:30</option>
+          <option value="21:00">21:00</option>
+          <option value="22:00">22:00</option>
+          <option value="23:00">23:00</option>
+          </select>
+        <input type="submit" value="Agendar">
+      </form>
+      <form class="sessao">
+        <label for="tipo-ingresso">Selecione o tipo de ingresso:</label><br>
+        <input type="radio" id="inteira" name="tipo-ingresso" value="inteira">
+        <label for="inteira">Inteira: R$32,00</label><br>
+        <input type="radio" id="meia" name="tipo-ingresso" value="meia">
+        <label for="meia">Meia-entrada: R$16,00</label><br>
+        <input type="submit" value="Comprar">
+      </form>
+</body>
+</html>

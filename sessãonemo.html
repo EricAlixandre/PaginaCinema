@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lng="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Sessões</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+
+<body>
+    <header class="header">
+        <a href="#">CineXperience</a>
+        <nav>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Qual filme você esta procurando?">
+                <button class="search-button">Buscar</button>
+              </div>
+         
+        </nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>  
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        
+      </header>
+       
+    <h1>Sinopse</h1>
+   <p> O passado reserva tristes memórias para Marlin nos recifes de coral, onde perdeu sua esposa e toda a ninhada. Agora, ele cria seu único filho Nemo com todo o cuidado do mundo, mas o pequeno e simpático peixe-palhaço acaba exagerando durante uma simples discussão e acaba sendo capturado por um mergulhador. Agora, o pai super protetor precisa entrar em ação e parte numa busca incansável pelo mar aberto, na esperança de encontrar seu amado filhote. No meio do caminho, ele acaba conhecendo Dory e, juntos, a dupla vai viver uma incrível aventura. Enquanto isso, Nemo também vive uma intensa experiência ao lado de seus novos amigos habitantes de um aquário, pois eles precisam ajudá-lo a escapar do destino que lhe foi reservado: ir parar nas mãos da terrível Darla, sobrinha do dentista que o capturou.</p>
+    <h1>Sessões Disponiveis</h1>
+    
+    <form class="sessao">
+        <label for="data">Escolha um dia:</label>
+        <input type="date" id="data" name="data">
+        <input type="submit" value="Agendar">
+      </form>
+      <form class="sessao">
+        <label for="horarios">Escolha um horário disponível:</label>
+        <select id="horarios" name="horarios">
+            <option value="-">-</option>  
+          <option value="18:00">18:00</option>
+          <option value="19:30">19:30</option>
+          <option value="21:00">21:00</option>
+          <option value="22:00">22:00</option>
+          <option value="23:00">23:00</option>
+          </select>
+        <input type="submit" value="Agendar">
+      </form>
+      <form class="sessao">
+        <label for="tipo-ingresso">Selecione o tipo de ingresso:</label><br>
+        <input type="radio" id="inteira" name="tipo-ingresso" value="inteira">
+        <label for="inteira">Inteira: R$32,00</label><br>
+        <input type="radio" id="meia" name="tipo-ingresso" value="meia">
+        <label for="meia">Meia-entrada: R$16,00</label><br>
+        <input type="submit" value="Comprar">
+      </form>
+</body>
